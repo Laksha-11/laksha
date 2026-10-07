@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Laksha Gowda - Software Engineer Portfolio featuring futuristic navy aurora visuals, glowing neural networks, 3D interactive elements, and AI coding telemetry.">
+  <meta name="author" content="Laksha Gowda">
+  <title>Laksha Gowda | Futuristic Neural Software Engineer Portfolio</title>
+
+  <!-- Google Fonts: Modern Futuristic Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;600;700;800;900&display=swap">
+
+  <!-- Futuristic Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================================= -->
+  <!-- 1. CINEMATIC NAVY AURORA & COSMIC BACKGROUND              -->
+  <!-- ========================================================= -->
+  <!-- Underlying wallpaper -->
+  <div class="cosmic-wallpaper-bg" aria-hidden="true"></div>
+
+  <!-- Animated Navy & Teal Aurora Beams -->
+  <div class="aurora-container" aria-hidden="true">
+    <div class="aurora-beam aurora-beam-1"></div>
+    <div class="aurora-beam aurora-beam-2"></div>
+    <div class="aurora-beam aurora-beam-3"></div>
+  </div>
+
+  <!-- Interactive Neural Synapse Canvas & Particle Stream -->
+  <canvas id="neural-canvas" aria-hidden="true"></canvas>
+
+  <!-- Cyber Scanline Grain Overlay -->
+  <div class="cyber-scanlines" aria-hidden="true"></div>
+
+  <!-- ========================================================= -->
+  <!-- 2. ABSTRACT 3D GEOMETRIC ELEMENTS & FLOATING CODE         -->
+  <!-- ========================================================= -->
+  <div class="abstract-3d-scene" aria-hidden="true">
+    <!-- 3D Wireframe Cyber Cube -->
+    <div class="geom-polyhedron cyber-cube">
+      <div class="cube-face cube-face-front"></div>
+      <div class="cube-face cube-face-back"></div>
+      <div class="cube-face cube-face-right"></div>
+      <div class="cube-face cube-face-left"></div>
+      <div class="cube-face cube-face-top"></div>
+      <div class="cube-face cube-face-bottom"></div>
+    </div>
+
+    <!-- 3D Wireframe Gyroscope Rings -->
+    <div class="geom-polyhedron cyber-gyro">
+      <div class="gyro-ring"></div>
+      <div class="gyro-ring"></div>
+      <div class="gyro-ring"></div>
+    </div>
+
+    <!-- Hidden AI Equation & Latent Space Snippets -->
+    <div class="floating-ai-code ai-code-1">Softmax(QK^T / √d_k)V</div>
+    <div class="floating-ai-code ai-code-2">Loss: 0.0012 // Conv: Optimal</div>
+    <div class="floating-ai-code ai-code-3">z ~ N(0, I) // 4096-D</div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- 3. FUTURISTIC HEADER & HUD TELEMETRY                      -->
+  <!-- ========================================================= -->
+  <header id="header">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <div class="hud-telemetry">
+        <a href="#hero" class="brand-logo" id="brand-logo">
+          <span class="brand-pulse-dot"></span>
+          <span>Laksha.dev</span>
+        </a>
+        <span class="hud-status-badge">
+          <span>●</span> NEURAL CORE ONLINE
+        </span>
+      </div>
+
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#about" id="nav-about">Dossier</a></li>
+        <li><a href="#skills" id="nav-skills">Neural Matrix</a></li>
+        <li><a href="#timeline" id="nav-timeline">Epochs</a></li>
+        <li><a href="#projects" id="nav-projects">Artifacts</a></li>
+        <li><a href="#contact" id="nav-contact">Uplink</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- AI Terminal Trigger -->
+        <button type="button" class="btn-ai-terminal-trigger" id="btn-terminal-trigger" title="Press `~` or click to open AI Console">
+          <span>[ ~/ai-console ]</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========================================================= -->
+  <!-- 4. MAIN CONTENT CONTAINER                                 -->
+  <!-- ========================================================= -->
+  <main id="main-content">
+
+    <!-- ======================================================= -->
+    <!-- 4.1 HERO SECTION & 3D INTERACTIVE HOLOGRAM              -->
+    <!-- ======================================================= -->
+    <section id="hero" aria-labelledby="hero-title">
+      <div class="content-container hero-grid">
+        <!-- Hero Text & Narrative -->
+        <div class="hero-left">
+          <div class="hero-meta-stream">
+            <span class="epoch-tag">EPOCH 2026.4</span>
+            <span>//</span>
+            <span>AUTONOMOUS CODE ARCHITECTURE</span>
+          </div>
+
+          <h1 id="hero-title">Laksha Gowda</h1>
+
+          <!-- Dynamic Typing Role Subtitle -->
+          <div class="hero-subtitle-typed">
+            <span>&gt; </span>
+            <span id="hero-typed-text"></span>
+            <span class="typing-cursor"></span>
+          </div>
+
+          <p class="hero-narrative">
+            Pioneering resilient distributed software, AI-augmented engineering systems, and cinematic human-computer interfaces. Engineering code at the frontier of thought and execution.
+          </p>
+
+          <!-- Real-Time Telemetry Stats Strip -->
+          <div class="hero-stats-strip">
+            <div class="stat-item">
+              <span class="stat-value">4096-D</span>
+              <span class="stat-label">Latent Architecture</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">99.98%</span>
+              <span class="stat-label">System Reliability</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">&lt; 10ms</span>
+              <span class="stat-label">Query Latency</span>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="cta-projects">
+              <span>Explore Artifacts</span>
+              <span>⚡</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="cta-contact">
+              <span>Transmit Uplink</span>
+              <span>📡</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3D Holographic Persona Card -->
+        <div class="hero-visual-3d">
+          <div class="hologram-card" title="Click to cycle Persona Mode!">
+            <div class="hologram-inner">
+              <img src="anime-dev.jpg" alt="Laksha Gowda - Holographic Engineer Persona" id="hero-profile-image">
+              <div class="hologram-scanline"></div>
+              
+              <!-- HUD Frame Corners -->
+              <div class="hologram-corner corner-tl"></div>
+              <div class="hologram-corner corner-tr"></div>
+              <div class="hologram-corner corner-bl"></div>
+              <div class="hologram-corner corner-br"></div>
+
+              <!-- Telemetry Label -->
+              <div class="hologram-telemetry-tag">
+                <span id="hologram-model-id">NEURAL_AVATAR // v4.2</span>
+                <span>ONLINE ●</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Persona Mode Switcher -->
+          <div class="persona-controls-wrap">
+            <span class="persona-mode-indicator" id="persona-mode-tag">MODE: CYBER ANIME ⚡</span>
+            <button type="button" class="btn-toggle-persona" id="persona-toggle-btn">
+              Switch to IRL Portrait 📷
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 4.2 ABOUT SECTION: NEURAL DOSSIER                       -->
+    <!-- ======================================================= -->
+    <section id="about" aria-labelledby="about-title">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-tag">// ARCHITECTURE DOSSIER 🧠</span>
+          <h2 id="about-title">Engineering Lore</h2>
+          <p class="section-subtitle">The intellectual drive, systems philosophy, and foundational background</p>
+        </div>
+
+        <div class="tilt-card about-dossier-grid">
+          <!-- Main Narrative Bio -->
+          <div class="dossier-main">
+            <div class="dossier-body">
+              <p>
+                I am a software engineer focused on developing resilient, scalable digital systems where robust architectural principles converge with high-fidelity aesthetics.
+              </p>
+              <p>
+                My work spans backend distributed services, modern web client architectures, and emerging AI/ML workflows. I view every codebase as an interconnected neural graph — where precision, zero-waste algorithms, and elegant abstractions form the bedrock of sustainable software.
+              </p>
+              <p>
+                Beyond standard development, I thrive on exploring AI agent architectures, latency optimization, and open-source ecosystems that push computational creativity forward.
+              </p>
+            </div>
+          </div>
+
+          <!-- Sidebar Neural Meters -->
+          <div class="dossier-sidebar">
+            <div class="neural-stat-box">
+              <div class="neural-stat-title">
+                <span>Distributed Systems &amp; APIs</span>
+                <span>96%</span>
+              </div>
+              <div class="neural-stat-meter">
+                <div class="neural-stat-bar" style="width: 96%;"></div>
+              </div>
+            </div>
+
+            <div class="neural-stat-box">
+              <div class="neural-stat-title">
+                <span>Frontend Architecture &amp; UI</span>
+                <span>98%</span>
+              </div>
+              <div class="neural-stat-meter">
+                <div class="neural-stat-bar" style="width: 98%;"></div>
+              </div>
+            </div>
+
+            <div class="neural-stat-box">
+              <div class="neural-stat-title">
+                <span>Algorithmic Optimization</span>
+                <span>93%</span>
+              </div>
+              <div class="neural-stat-meter">
+                <div class="neural-stat-bar" style="width: 93%;"></div>
+              </div>
+            </div>
+
+            <div class="neural-stat-box">
+              <div class="neural-stat-title">
+                <span>AI Toolchains &amp; Pipelines</span>
+                <span>91%</span>
+              </div>
+              <div class="neural-stat-meter">
+                <div class="neural-stat-bar" style="width: 91%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 4.3 SKILLS SECTION: NEURAL MATRIX & TENSOR WEIGHTS      -->
+    <!-- ======================================================= -->
+    <section id="skills" aria-labelledby="skills-title">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-tag">// ACTIVE WEIGHTS &amp; PROTOCOLS ⚡</span>
+          <h2 id="skills-title">Neural Capabilities</h2>
+          <p class="section-subtitle">Computational languages, frameworks, and deployment toolchains</p>
+        </div>
+
+        <div class="skills-matrix-grid">
+          <!-- Cluster 1: Languages & Computation -->
+          <div class="tilt-card skill-cluster-card">
+            <div class="skill-cluster-header">
+              <h3 class="skill-cluster-title">
+                <span>Languages</span>
+              </h3>
+              <span class="skill-tensor-dim">[dim: 1024, 768]</span>
+            </div>
+            <div class="skills-tokens-list">
+              <span class="skill-token">TypeScript</span>
+              <span class="skill-token">JavaScript (ES6+)</span>
+              <span class="skill-token">Python</span>
+              <span class="skill-token">HTML5 / Semantic</span>
+              <span class="skill-token">CSS3 / Modern</span>
+              <span class="skill-token">SQL</span>
+            </div>
+          </div>
+
+          <!-- Cluster 2: Interface & Rendering -->
+          <div class="tilt-card skill-cluster-card">
+            <div class="skill-cluster-header">
+              <h3 class="skill-cluster-title">
+                <span>Interface &amp; Web</span>
+              </h3>
+              <span class="skill-tensor-dim">[softmax(logits)]</span>
+            </div>
+            <div class="skills-tokens-list">
+              <span class="skill-token">React.js</span>
+              <span class="skill-token">Next.js</span>
+              <span class="skill-token">Tailwind CSS</span>
+              <span class="skill-token">Canvas &amp; WebGL</span>
+              <span class="skill-token">Responsive UX</span>
+              <span class="skill-token">Micro-Animations</span>
+            </div>
+          </div>
+
+          <!-- Cluster 3: Backend & Data Stores -->
+          <div class="tilt-card skill-cluster-card">
+            <div class="skill-cluster-header">
+              <h3 class="skill-cluster-title">
+                <span>Compute &amp; Backend</span>
+              </h3>
+              <span class="skill-tensor-dim">[latency: &lt;12ms]</span>
+            </div>
+            <div class="skills-tokens-list">
+              <span class="skill-token">Node.js</span>
+              <span class="skill-token">Express</span>
+              <span class="skill-token">PostgreSQL</span>
+              <span class="skill-token">MongoDB</span>
+              <span class="skill-token">RESTful APIs</span>
+              <span class="skill-token">Redis Caching</span>
+            </div>
+          </div>
+
+          <!-- Cluster 4: Infrastructure & MLOps -->
+          <div class="tilt-card skill-cluster-card">
+            <div class="skill-cluster-header">
+              <h3 class="skill-cluster-title">
+                <span>DevOps &amp; Tools</span>
+              </h3>
+              <span class="skill-tensor-dim">[pipeline: active]</span>
+            </div>
+            <div class="skills-tokens-list">
+              <span class="skill-token">Docker</span>
+              <span class="skill-token">Git &amp; GitHub</span>
+              <span class="skill-token">CI/CD Automation</span>
+              <span class="skill-token">Linux Environment</span>
+              <span class="skill-token">Postman / OpenAPI</span>
+              <span class="skill-token">AI Agent Workflows</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 4.4 TIMELINE: QUANTUM CAREER WARP                       -->
+    <!-- ======================================================= -->
+    <section id="timeline" aria-labelledby="timeline-title">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-tag">// EXECUTION LOG &amp; EPOCHS 🗺️</span>
+          <h2 id="timeline-title">Career Milestones</h2>
+          <p class="section-subtitle">Chronological progression through engineering chapters</p>
+        </div>
+
+        <div class="timeline-warp-container">
+          <!-- Checkpoint 1 -->
+          <div class="timeline-checkpoint">
+            <div class="timeline-quantum-node"></div>
+            <div class="tilt-card">
+              <div class="checkpoint-epoch">
+                <span>EPOCH 2024 &ndash; PRESENT</span>
+                <span>// PRODUCTION</span>
+              </div>
+              <h3 class="checkpoint-role">Software Engineer</h3>
+              <p class="checkpoint-entity">Engineering Studio / Core Systems</p>
+              <p class="checkpoint-desc">
+                Architecting scalable web applications, optimizing query execution paths, and designing automated deployment pipelines. Collaborated closely across cross-functional teams to deliver high-concurrency client solutions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Checkpoint 2 -->
+          <div class="timeline-checkpoint">
+            <div class="timeline-quantum-node"></div>
+            <div class="tilt-card">
+              <div class="checkpoint-epoch">
+                <span>EPOCH 2023 &ndash; 2024</span>
+                <span>// APPRENTICESHIP</span>
+              </div>
+              <h3 class="checkpoint-role">Software Engineering Intern</h3>
+              <p class="checkpoint-entity">Tech Innovations Lab</p>
+              <p class="checkpoint-desc">
+                Engineered interactive UI modules and assisted in structuring relational database schemas. Built unit testing coverage and participated in code optimization reviews.
+              </p>
+            </div>
+          </div>
+
+          <!-- Checkpoint 3 -->
+          <div class="timeline-checkpoint">
+            <div class="timeline-quantum-node"></div>
+            <div class="tilt-card">
+              <div class="checkpoint-epoch">
+                <span>EPOCH 2020 &ndash; 2024</span>
+                <span>// FOUNDATIONS</span>
+              </div>
+              <h3 class="checkpoint-role">Bachelor of Engineering in Computer Science</h3>
+              <p class="checkpoint-entity">AIT Campus</p>
+              <p class="checkpoint-desc">
+                Rigorous grounding in Data Structures, Advanced Algorithms, Database Management, Computer Networks, and Distributed Architecture principles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 4.5 PROJECTS: HOLOGRAPHIC WORK ARTIFACTS                -->
+    <!-- ======================================================= -->
+    <section id="projects" aria-labelledby="projects-title">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-tag">// DEPLOYED ARTIFACTS ⚔️</span>
+          <h2 id="projects-title">Featured Works</h2>
+          <p class="section-subtitle">Engineered applications, services, and digital systems</p>
+        </div>
+
+        <div class="projects-holo-grid">
+          <!-- Project 1 -->
+          <div class="tilt-card project-holo-card">
+            <div>
+              <div class="project-holo-header">
+                <span class="project-metric-badge">Uptime: 99.98%</span>
+                <span class="skill-tensor-dim">v2.4</span>
+              </div>
+              <h3 class="project-title">Autonomous Cloud Platform</h3>
+              <p class="project-description">
+                End-to-end cloud resource management system with real-time websocket synchronization, distributed state, and automated telemetry logging.
+              </p>
+              <div class="project-tech-chips">
+                <span class="project-chip">React</span>
+                <span class="project-chip">Node.js</span>
+                <span class="project-chip">PostgreSQL</span>
+                <span class="project-chip">Docker</span>
+              </div>
+            </div>
+            <div class="project-footer-links">
+              <a href="https://github.com/Laksha-11-github" target="_blank" rel="noopener noreferrer" class="holo-link">
+                <span>GitHub Source</span>
+                <span>↗</span>
+              </a>
+              <a href="#" class="holo-link">
+                <span>Live Deploy</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="tilt-card project-holo-card">
+            <div>
+              <div class="project-holo-header">
+                <span class="project-metric-badge">Throughput: 50k req/s</span>
+                <span class="skill-tensor-dim">v1.8</span>
+              </div>
+              <h3 class="project-title">High-Velocity API Microservice</h3>
+              <p class="project-description">
+                Ultra-low-latency REST API service with Redis caching, token rate limiting, OpenAPI contract definitions, and automated CI test suites.
+              </p>
+              <div class="project-tech-chips">
+                <span class="project-chip">TypeScript</span>
+                <span class="project-chip">Express</span>
+                <span class="project-chip">Redis</span>
+                <span class="project-chip">Jest</span>
+              </div>
+            </div>
+            <div class="project-footer-links">
+              <a href="https://github.com/Laksha-11-github" target="_blank" rel="noopener noreferrer" class="holo-link">
+                <span>GitHub Source</span>
+                <span>↗</span>
+              </a>
+              <a href="#" class="holo-link">
+                <span>Documentation</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="tilt-card project-holo-card">
+            <div>
+              <div class="project-holo-header">
+                <span class="project-metric-badge">Latency: &lt;14ms</span>
+                <span class="skill-tensor-dim">v3.1</span>
+              </div>
+              <h3 class="project-title">Real-Time Telemetry Dashboard</h3>
+              <p class="project-description">
+                Dynamic analytics dashboard visualizing multi-node system metrics, interactive charts, dark glassmorphism layout, and custom filterable grids.
+              </p>
+              <div class="project-tech-chips">
+                <span class="project-chip">Next.js</span>
+                <span class="project-chip">Chart.js</span>
+                <span class="project-chip">Tailwind</span>
+                <span class="project-chip">WebSockets</span>
+              </div>
+            </div>
+            <div class="project-footer-links">
+              <a href="https://github.com/Laksha-11-github" target="_blank" rel="noopener noreferrer" class="holo-link">
+                <span>GitHub Source</span>
+                <span>↗</span>
+              </a>
+              <a href="#" class="holo-link">
+                <span>Live Preview</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================= -->
+    <!-- 4.6 CONTACT: ENCRYPTED QUANTUM UPLINK                   -->
+    <!-- ======================================================= -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="content-container">
+        <div class="section-header">
+          <span class="section-tag">// TRANSMIT SIGNAL 📡</span>
+          <h2 id="contact-title">Initiate Uplink</h2>
+          <p class="section-subtitle">Open channels for engineering collaborations and opportunities</p>
+        </div>
+
+        <div class="tilt-card contact-uplink-grid">
+          <!-- Transmission Form -->
+          <form class="uplink-form" id="uplink-form" action="#" method="POST">
+            <div class="form-field">
+              <label for="uplink-name">Sender Identification</label>
+              <input type="text" id="uplink-name" name="name" placeholder="Name or Organization" required>
+            </div>
+
+            <div class="form-field">
+              <label for="uplink-email">Comm Frequency / Email</label>
+              <input type="email" id="uplink-email" name="email" placeholder="name@domain.com" required>
+            </div>
+
+            <div class="form-field">
+              <label for="uplink-subject">Mission Objective</label>
+              <input type="text" id="uplink-subject" name="subject" placeholder="Project Inquiry / Job Proposition" required>
+            </div>
+
+            <div class="form-field">
+              <label for="uplink-payload">Transmission Payload</label>
+              <textarea id="uplink-payload" name="message" rows="5" placeholder="Transmit details of your project or proposition..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="uplink-submit-btn">
+              <span>Transmit Signal</span>
+              <span>🚀</span>
+            </button>
+          </form>
+
+          <!-- Direct Channels -->
+          <div class="uplink-channels">
+            <div class="uplink-direct-channels">
+              <h3>Direct Terminals</h3>
+              <p style="color: var(--text-secondary); font-size: 0.95rem;">
+                Connect directly through primary developer networks and professional hubs.
+              </p>
+
+              <div class="uplink-channel-list">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/laksha-gowda-2b711b440" target="_blank" rel="noopener noreferrer" class="channel-card">
+                  <span class="channel-icon">💼</span>
+                  <div>
+                    <div class="channel-title">LinkedIn Network</div>
+                    <div class="channel-handle">in/laksha-gowda-2b711b440</div>
+                  </div>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/Laksha-11-github" target="_blank" rel="noopener noreferrer" class="channel-card">
+                  <span class="channel-icon">🐙</span>
+                  <div>
+                    <div class="channel-title">GitHub Repositories</div>
+                    <div class="channel-handle">github.com/Laksha-11-github</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--neon-teal); margin-top: 1.5rem;">
+              ● ENCRYPTION: TLS 1.3 // STATUS: READY
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================= -->
+  <!-- 5. HIDDEN AI COMMAND TERMINAL (EASTER EGG MODAL)          -->
+  <!-- ========================================================= -->
+  <div class="ai-terminal-overlay" id="ai-terminal-overlay" aria-hidden="true">
+    <div class="ai-terminal-window">
+      <div class="terminal-titlebar">
+        <div class="terminal-title">
+          <span style="color: var(--neon-cyan);">⚡</span>
+          <span>NEURAL_SHELL // LAKSHA-CORE-v4.2</span>
+        </div>
+        <button type="button" class="terminal-close-btn" id="terminal-close-btn" aria-label="Close Terminal">&times;</button>
+      </div>
+
+      <div class="terminal-output" id="terminal-output">
+        <div class="sys-response">
+          Welcome to <span class="accent-cyan">Laksha's Neural AI Console</span> [Build 2026.04]<br>
+          Type <span class="accent-gold">help</span> to view available system instructions. (Press <span class="accent-cyan">`</span> to close).
+        </div>
+      </div>
+
+      <div class="terminal-input-bar">
+        <span class="terminal-prompt-prefix">guest@neural-core:~$</span>
+        <input type="text" id="terminal-input" placeholder="type a command..." autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- 6. AUTONOMOUS AI CHIBI COPILOT MASCOT                     -->
+  <!-- ========================================================= -->
+  <div class="chibi-copilot-widget" id="chibi-copilot-widget" title="Click me to chat with AI Copilot!">
+    <div class="copilot-bubble" id="copilot-bubble">
+      <span id="copilot-bubble-text">Neural cluster synced. Ready to build something remarkable! 🌌</span>
+      <span class="copilot-bubble-sub">AI Copilot v4.2 // Click for insights 💬</span>
+    </div>
+    <div class="copilot-avatar-orb">
+      <img src="mascot.jpg" alt="Laksha's AI Chibi Copilot" width="76" height="76">
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- 7. FOOTER                                                 -->
+  <!-- ========================================================= -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <p class="footer-copy">
+        &copy; 2026 Laksha Gowda. Engineered with Neural Precision, Navy Aurora Aesthetics &amp; Cyber Imagination.
+      </p>
+
+      <div class="footer-links">
+        <a href="#hero">Back to Top ↑</a>
+        <a href="https://github.com/Laksha-11-github" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/laksha-gowda-2b711b440" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Futuristic Interactive JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
